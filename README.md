@@ -35,7 +35,7 @@ And then execute:
 
 Result:
 
-        version: 1
+    version: 1
 
 	dn: ou=people,dc=test
 	ou: people
