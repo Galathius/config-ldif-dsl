@@ -6,7 +6,7 @@ TODO: Write a gem description
 
 Add this line to your application's Gemfile:
 
-    gem 'config-ldif-dsl'
+    gem 'config-ldif-dsl' , github: 'Galathius/config-ldif-dsl'
 
 And then execute:
 
