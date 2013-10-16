@@ -15,6 +15,8 @@ And then execute:
 
 ## Usage
 
+require 'ldif'
+
 TODO: Write usage instructions here
 
 ## Contributing
