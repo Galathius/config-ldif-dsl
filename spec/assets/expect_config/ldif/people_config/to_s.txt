@@ -1,0 +1,10 @@
+dn: cn=%{username},ou=people,dc=test
+cn: %{username}
+sn: %{second_name}
+givenName: %{first_name}
+mail: %{mail}
+userpassword: %{password}
+objectclass: top
+objectclass: person
+objectClass: organizationalPerson
+objectclass: inetOrgPerson

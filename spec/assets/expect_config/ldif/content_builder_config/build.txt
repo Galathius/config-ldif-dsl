@@ -1,0 +1,29 @@
+version: 1
+
+dn: ou=people,dc=test
+ou: people
+objectClass: top
+objectclass: organizationalUnit
+
+dn: ou=groups,dc=test
+ou: groups
+objectClass: top
+objectclass: organizationalUnit
+
+dn: cn=%{group_name},ou=groups,dc=test
+objectclass: top
+objectClass: groupOfUniqueNames
+cn: %{group_name}
+ou: groups
+uniqueMember: cn=%{username},ou=people,dc=test
+
+dn: cn=%{username},ou=people,dc=test
+cn: %{username}
+sn: %{second_name}
+givenName: %{first_name}
+mail: %{email}
+userpassword: %{password_hash}
+objectclass: top
+objectclass: person
+objectClass: organizationalPerson
+objectclass: inetOrgPerson

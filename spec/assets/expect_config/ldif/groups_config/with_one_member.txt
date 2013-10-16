@@ -1,0 +1,6 @@
+dn: cn=%{name},ou=groups,dc=test
+objectclass: top
+objectClass: groupOfUniqueNames
+cn: %{name}
+ou: groups
+uniqueMember: cn=%{email},ou=people,dc=test

@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'ldif/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "ldif"
+  spec.name          = "config-ldif-dsl"
   spec.version       = Ldif::VERSION
   spec.authors       = ["Ilya Kamenko"]
   spec.email         = ["i.kamenko@itransition.com"]
@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = ""
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files`.split($/)
+  spec.files         = `git ls-files`.split("\n")
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]

@@ -6,12 +6,15 @@ TODO: Write a gem description
 
 Add this line to your application's Gemfile:
 
-    gem 'config-ldif-dsl'
+    gem 'ldif'
 
 And then execute:
 
     $ bundle
 
+Or install it yourself as:
+
+    $ gem install ldif
 
 ## Usage
 

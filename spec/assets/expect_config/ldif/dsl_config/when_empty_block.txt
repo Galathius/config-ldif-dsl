@@ -1,0 +1,11 @@
+version: 1
+
+dn: ou=people,dc=test
+ou: people
+objectClass: top
+objectclass: organizationalUnit
+
+dn: ou=groups,dc=test
+ou: groups
+objectClass: top
+objectclass: organizationalUnit
