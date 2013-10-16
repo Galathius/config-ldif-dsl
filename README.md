@@ -33,6 +33,7 @@ And then execute:
     
     LDIF::DSL.ldif(&block))
 
+Result:
     version: 1
 
 	dn: ou=people,dc=test
