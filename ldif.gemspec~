@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'ldif/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "config-ldif-dsl"
+  spec.name          = "ldif"
   spec.version       = Ldif::VERSION
   spec.authors       = ["Ilya Kamenko"]
   spec.email         = ["i.kamenko@itransition.com"]

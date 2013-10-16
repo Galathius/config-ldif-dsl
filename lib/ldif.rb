@@ -1,5 +1,5 @@
-require "ldif/version"
+require 'ldif/dsl'
 
-module Ldif
-  # Your code goes here...
+module LDIF
+
 end

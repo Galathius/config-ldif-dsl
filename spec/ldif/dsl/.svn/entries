@@ -1,0 +1,49 @@
+10
+
+dir
+0
+https://svn.vlingo.com/svn/devpartners/webapps/LocationDB/trunk/spec/lib/ldif/dsl
+https://svn.vlingo.com/svn/devpartners
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7bd2e34f-2edc-4c13-85b1-404e43a9617b
+
+content_builder_spec.rb
+file
+
+
+
+add
+
+groups_spec.rb
+file
+
+
+
+add
+
+people_spec.rb
+file
+
+
+
+add
+
