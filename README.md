@@ -17,7 +17,7 @@ And then execute:
 
     require 'ldif'
 
-	bock = 
+	block = 
       proc do
         person do
           first_name 'John'
