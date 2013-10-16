@@ -15,9 +15,53 @@ And then execute:
 
 ## Usage
 
-require 'ldif'
+    require 'ldif'
 
-TODO: Write usage instructions here
+	bock = 
+      proc do
+        person do
+          first_name 'John'
+          second_name 'Doe'
+          password '123qwe'
+        end
+
+        group do
+          name 'administrators'
+          member 'John_Doe'
+        end
+      end
+    
+    LDIF::DSL.ldif(&block))
+
+    version: 1
+
+	dn: ou=people,dc=test
+	ou: people
+	objectClass: top
+	objectclass: organizationalUnit
+
+	dn: ou=groups,dc=test
+	ou: groups
+	objectClass: top
+	objectclass: organizationalUnit
+
+	dn: cn=administrators,ou=groups,dc=test
+	objectclass: top
+	objectClass: groupOfUniqueNames
+	cn: administrators
+	ou: groups
+	uniqueMember: cn=John_Doe,ou=people,dc=test
+
+	dn: cn=John_Doe,ou=people,dc=test
+	cn: John_Doe
+	sn: Doe
+	givenName: John
+	mail: John_Doe@example.com
+	userpassword: {SHA}Bf50YcYHwzIpdy1AJQVgEBan0Oo=
+	objectclass: top
+	objectclass: person
+	objectClass: organizationalPerson
+	objectclass: inetOrgPerson
 
 ## Contributing
 
