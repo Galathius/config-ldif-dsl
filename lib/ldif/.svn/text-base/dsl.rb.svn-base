@@ -1,7 +1,0 @@
-module LDIF
-  module DSL
-    def ldif(&block)
-      Docile.dsl_eval(ContentBuilder.new, &block).build
-    end
-  end
-end
